@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Garagem</title>
+    <link href="./estilos/garagem.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+    <main>
+        <div id="informacoes">
+            <h1 id="infTitle">Consulte sua Garagem</h1>
+            <br><br>
+
+            <!-- Informações do Formulário -->
+            <form id="form" action="PHP/garagem.php" method="POST">
+                <div id="divID">
+                    <label for="ID">ID</label><br>
+                    <input type="text" class="input" id="ID" name="ID" placeholder="Digite seu ID">
+                </div>
+          
+                <br><br><br>
+
+                <div id="paragrafo"> 
+                    <span id="inf_parag">Não está localizando?</span><br>
+                    <a href="cad_garagem.html">Clique aqui</a> para cadastrar uma nova garagem.
+                </div>
+                
+                <input type="submit" id="entrar" onclick="garagem();">
+
+            </form>
+        
+                <br><br>
+            </form>
+        </div>
+    </main>
+    <script src="javascript/script.js"></script>
+</body>
+</html>

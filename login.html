@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="./estilos/login.css" type="text/css" rel="stylesheet"/>
+</head>
+  
+<body>
+    <main>
+        <div id="informacoes">
+            <h1 id="infTitle">Seja Bem Vindo!</h1>
+            <br><br>
+
+            <!-- Informações do Formulário -->
+            <form id="form" action="PHP/login.php" method="POST">
+              <label for="email">E-mail</label><br>
+              <input type="email" class="input" id="email" name="email" placeholder="Digite seu e-mail" request>
+            
+              <br><br>
+        
+              <label for="senha">Senha</label><br>
+              <input type="password" class="input" id="senha" name="senha" placeholder="Digite sua senha" request>
+
+              <br><br><br>
+
+              <input type="submit" id="entrar" value="Entrar" onclick="login();">
+        
+              <br><br>
+            </form>
+       
+        </div>
+    </main>
+<script src="javascript/script.js"></script>
+</body>
+</html>

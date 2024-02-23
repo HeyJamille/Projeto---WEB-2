@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+  
+/*Imagem de fundo do site*/
+body {
+  background-color: #0091ad;
+}
+  
+/*Corpo do site*/
+main {
+  position: relative;
+  height: 35vw;
+  width: 30vw;
+  border: 1px solid black;
+  border-radius: 7vw;
+  margin-top: 5vw;
+  margin-left: 35vw;
+  background-color: white;
+}
+  
+/*Borda que vai conter todas as informações do cadastro*/
+#informacoes {
+  padding-top: 5vw;
+  padding-left: 7vw;
+}
+  
+/*Título "Cadastre-se" dentro do site*/
+#infTitle {
+  margin-left: 1vw;
+}
+  
+/*Informações sobre o parágro de login*/
+span1 {
+  margin-left: 3vw;
+}
+  
+span2 {
+  margin-left: 80px;
+}
+    
+#informacoes .input {
+  width: 15vw;
+  height: 2vw;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding-left: 1vw;
+}
+  
+/*Botão finalizar*/
+#finalizar {
+  height: 3vw;
+  width: 7vw;
+  border: 1px solid black;
+  border-radius: 10vw;
+  margin-top: 7vw;
+  margin-left: 5vw;
+  text-align: center;
+  cursor: pointer;
+}
+  
+main #finalizar:hover {
+  background-color: #80b1c7;
+}
+    
+    

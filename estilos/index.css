@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#section1 {
+  background-color: #0091ad;
+  padding-bottom: 16vw;
+}
+
+#section1 p {
+  font-size: 2vw;
+  margin-top: 15vw;
+  margin-left: 6vw;
+  text-align: justify;
+  color: white;
+}
+
+#section1 #imgCaminhoes {
+  position: absolute;
+  left: 55vw;
+  bottom: 5vw;
+  width: 38vw;
+  height: 30vw;
+}
+
+#section1 #imgLogin {
+  position: absolute;
+  left: 90vw;
+  top: 2vw;
+  width: 3vw;
+  height: 3vw;
+}
+
+
+#section1 button {
+  width: 7vw;
+  height: 4vw;
+  border: none;
+  border-radius: 20vw;
+  margin-left: 24vw;
+  margin-top: 2vw;
+  cursor: pointer;
+}
+
+#section1 button:hover {
+  background-color: #80b1c7;
+}
+  
+#negrito {
+  margin-left: 10vw;
+}
+
+#menu {
+  padding-left: 4vw;
+  background-color: #ffffff;
+}
+
+#menu ul li {
+  display: inline;
+}
+
+#menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 2vw;
+  padding: 2vw;
+  display: inline-block;
+  transition: background .4s;
+}
+ 
+/* Ao passar o mouse em cima de cada item da lista muda a cor */
+#menu ul li a:hover {
+  background-color: #80b1c7;
+}
+
+/*Segunda parte da página*/
+#section2 {
+  position: relative;
+  background-color: #07396b;
+  padding-top: 2vw;
+  padding-bottom: 7vw;
+}
+
+#section2 header {
+  color: white;
+  font-size: 3vw;
+  text-align: center;
+}
+
+#section2 main aside img {
+  height: 30vw;
+  width: 38vw;
+  margin-left: 5vw;
+  margin-top: 5vw;
+}
+
+#section2 main div p {
+  position: absolute;
+  display: inline;
+  left: 50vw;
+  top: 20vw;
+  margin-right: 5vw;
+  font-size: 2vw;
+  text-align: justify;
+  color: #000000;
+}
+
+#section2 main div h4 {
+  position: absolute;
+  display: inline;
+  left: 62vw;
+  top: 15vw;
+  color: white;
+}
+
+/*Segunda imagem da parte de conferir as páginas do site*/
+#section3 {
+  position: relative;
+  background-color: #0091ad;
+  padding-top: 2vw;
+  padding-bottom: 10vw;
+}
+
+#section3 header {
+  color: white;
+  font-size: 3vw;
+  text-align: center;
+}
+
+#section3 main aside img {
+  height: 35vw;
+  width: 45vw;
+  margin-left: 52vw;
+  margin-top: 5vw;
+}
+
+#section3 main div p {
+  position: absolute;
+  display: inline;
+  margin-right: 50vw;
+  left: 5vw;
+  top: 21vw;
+  font-size: 2vw;
+  text-align: justify;
+  color: #000000;
+}
+
+#section3 main div h4 {
+  position: absolute;
+  display: inline;
+  right: 57vw;
+  top: 16vw;
+  color: white;
+}
+
+/*Terceira imagem da parte de conferir as páginas do site*/
+#section4 {
+  position: relative;
+  background-color: #07396b;
+  padding-top: 2vw;
+  padding-bottom: 10vw;
+}
+
+#section4 header {
+  color: white;
+  font-size: 3vw;
+  text-align: center;
+}
+
+#section4 main aside img {
+  height: 30vw;
+  width: 38vw;
+  margin-left: 5vw;
+  margin-top: 5vw;
+}
+
+#section4 main div p {
+  position: absolute;
+  display: inline;
+  left: 50vw;
+  top: 18vw;
+  margin-right: 5vw;
+  font-size: 2vw;
+  text-align: justify;
+  color: #000000;
+}
+
+#section4 main div h4 {
+  position: absolute;
+  display: inline;
+  left: 57vw;
+  top: 13vw;
+  color: white;
+}
+
+/*Quarta imagem da parte de conferir as páginas do site*/
+#section5 {
+  position: relative;
+  background-color: #0091ad;
+  padding-top: 2vw;
+  padding-bottom: 10vw;
+}
+
+#section5 header {
+  color: white;
+  font-size: 3vw;
+  text-align: center;
+}
+
+#section5 main aside img {
+  height: 35vw;
+  width: 45vw;
+  margin-left: 50vw;
+  margin-top: 5vw;
+}
+
+#section5 main div p {
+  position: absolute;
+  display: inline;
+  margin-right: 50vw;
+  left: 5vw;
+  top: 15vw;
+  font-size: 2vw;
+  text-align: justify;
+  color: #000000;
+}
+
+#section5 main div h4 {
+  position: absolute;
+  display: inline;
+  right: 60vw;
+  top: 10vw;
+  color: white;
+}
+
+/* Deixa responsivo */
+@media screen and (min-width: 25em){
+  html{ 
+    font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) );
+  }
+}
+
+/* Safari <8 and IE <11 */
+@media screen and (min-width: 25em){
+  html{ 
+    font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) );
+  }
+}
+
+@media screen and (min-width: 50em){
+  html{
+    font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) );
+  }
+}
+
+
+

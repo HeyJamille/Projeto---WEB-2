@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <link href="./estilos/cad_motoristas.css" type="text/css" rel="stylesheet"/>
+</head>
+  
+<body>
+    <main>
+        <div id="informacoes">
+            <h1 id="infTitle">Cadastro de um <span1>Motorista</span1>
+            </h1>
+            <br><br>
+
+            <!-- Informações do Formulário -->
+            <form id="form" action="PHP/cad_motoristas.php" method="post">
+                <label for="nome">Nome</label><br>
+                <input type="text" class="input" id="nome" name="nome" placeholder="Digite o nome">
+        
+                <br><br>
+        
+                <label for="ID">ID</label><br>
+                <input type="text" class="input" id="ID" name="ID" placeholder="Digite o ID">
+                
+                <br><br>
+        
+                <label for="CPF">CPF</label><br>
+                <input type="text" class="input" id="CPF" name="CPF" placeholder="Digite o CPF">
+
+                <br><br><br>
+
+                <input type="submit" id="finalizar" onclick="cad_motoristas()">
+          
+                <br><br>
+            </form>
+
+        </div>
+    </main>
+    <script type="text/javascript" src="javascript/script.js"></script>
+</body>
+</html>

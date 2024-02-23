@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Imagem de fundo do site*/
+body {
+  background-color: #0091ad;
+}
+  
+/*Corpo do site*/
+main {
+  position: relative;
+  height: 30vw;
+  width: 50vw;
+  border: 1px solid black;
+  border-radius: 7vw;
+  margin: auto;
+  margin-top: 7vw;
+  background-color: white;
+}
+  
+/*Borda que vai conter todas as informações do cadastro*/
+#informacoes {
+  position: relative;
+  position: relative;
+  padding-top: 3vw;
+  padding-left: 7vw;
+}
+  
+/*Título "Cadastre-se" dentro do site*/
+#infTitle {
+  margin-left: 6vw;
+}
+  
+#informacoes .input {
+  width: 15vw;
+  height: 2vw;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding-left: 1vw;
+}
+  
+/*Divs do formulário*/
+#divID {
+  display: inline;
+}
+  
+#divModelo {
+  position: absolute;
+  display: inline-block;
+  margin-left: 8%;
+  top: 26%;
+}
+  
+#divAno {
+  position: absolute;
+  display: inline;
+  top: 40%;
+}
+  
+#divPlaca {
+  position: absolute;
+  display: inline-block;
+  margin-left: 40%;
+  top: 40%;
+}
+  
+#divGaragem {
+  margin-left: 10vw;
+}
+  
+/*Botão finalizar*/
+#finalizar {
+  height: 3vw;
+  width: 7vw;
+  border: 1px solid black;
+  border-radius: 10vw;
+  margin-top: 2vw;
+  margin-left: 15vw;
+  text-align: center;
+  cursor: pointer;
+}
+  
+main #finalizar:hover {
+  background-color: #80b1c7;
+}
+    
+    

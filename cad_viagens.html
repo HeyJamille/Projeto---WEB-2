@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Viagem</title>
+    <link href="./estilos/cad_viagens.css" type="text/css" rel="stylesheet"/>
+</head>
+  
+<body>
+    <main>
+        <div id="informacoes">
+            <h1>Cadastro de uma Viagem</h1>
+            
+            <!-- Informações do Formulário -->
+            <form id="form" action="PHP/cad_viagens.php" method="POST">
+                <div id="divKm_inicial" class="esquerda">
+                    <label for="km_inicial">Km Inicial</label><br>
+                    <input type="text" class="input" id="km_inicial" name="km_inicial" placeholder="Digite os Km Iniciais">
+                </div>
+
+                <div id="divKm_final" class="direita">
+                    <label for="km_final">Km Final</label><br>
+                    <input type="text" class="input" id="km_final" name="km_final" placeholder="Digite os Km Finais">
+                </div>
+
+                <div id="divData_saida" class="esquerda">
+                    <label for="data_saida">Data de Saída</label><br>
+                    <input type="text" class="input" id="data_saida" name="data_saida" placeholder="Digite a Data de Saída">
+                </div>
+
+                <div id="divData_entrada" class="direita">
+                    <label for="data_entrada">Data de Entrada</label><br>
+                    <input type="text" class="input" id="data_entrada" name="data_entrada" placeholder="Digite a Data de Entrada">
+                </div>
+
+                <div id="divID" class="esquerda">
+                    <label for="ID">ID</label><br>
+                    <input type="text" class="input" id="ID" name="ID" placeholder="Digite o ID">
+                </div>
+          
+                <div id="divID_veiculo" class="direita">
+                    <label for="ID_carro">ID do Veículo</label><br>
+                    <input type="text" class="input" id="ID_carro" name="ID_carro" placeholder="Digite o ID do Veículo">
+                </div>
+
+                <div id="divID_motorista" class="esquerda">
+                    <label for="ID_motorista">ID do Motorista</label>
+                    <br>
+                    <input type="text" class="input" id="ID_motorista" name="ID_motorista" placeholder="Digite o ID do Motorista">
+                </div>
+          
+                <input type="submit" id="finalizar" onclick="cad_viagens()">
+         
+            </form>
+       
+        </div>
+    </main>
+    <script type="text/javascript" src="javascript/script.js"></script>
+</body>
+</html>

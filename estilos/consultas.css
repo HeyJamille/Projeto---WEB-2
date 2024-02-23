@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+  
+header {
+  background-color: #0091ad;
+  height: 6vw;
+  padding-top: 2vw;
+  font-size: 3vw;
+  text-align: center;
+  color: white;
+}
+  
+#imagem {
+  position: absolute;
+  margin-top: 2.5%;
+  margin-left: 7vw;
+  height: 3vw;
+  width: 3vw;
+}
+
+button:hover {
+  color: white;
+}
+
+/*Configurações da lista*/
+#menu {
+  text-align: center;
+  position: inline;
+  margin-top: 10vw;
+  margin-left: 7vw;
+}
+  
+#menu ul li {
+  display: inline;
+  margin-right: 15vw;
+}
+  
+#menu ul li a {
+  position: absolute;
+  text-decoration: none;
+  font-size: 2vw;
+  color: black;
+}

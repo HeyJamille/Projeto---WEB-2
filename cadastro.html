@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <link href="./estilos/cadastro.css" type="text/css" rel="stylesheet"/>
+</head>
+  
+<body>
+    <main>
+        <div id="informacoes">
+        <h1 id="infTitle">Cadastre-se</h1>
+        <br><br>
+
+        <!-- Informações do Formulário -->
+        <form id="form" action="PHP/cadastro.php" method="post">
+            <label for="nome">Nome</label><br>
+            <input type="text" class="input" id="nome" name="nome" placeholder="Digite seu nome">
+            
+            <br><br>
+        
+            <label for="email">E-mail</label><br>
+            <input type="email" class="input" id="email" name="email" placeholder="Digite seu e-mail">
+            
+            <br><br>
+        
+            <label for="senha">Senha</label><br>
+            <input type="password" class="input" id="senha" name="senha" placeholder="Digite uma senha">
+
+            <br><br><br>
+
+            <div id="paragrafo"> 
+                <span id="inf_parag">Já possui cadastro?</span>
+                <br>
+                <a href="login.html">Clique aqui</a> para fazer login.
+            </div>
+
+            <input type="submit" id="finalizar" onclick="cadastro()">
+          
+          <br><br>
+        </form>
+      
+      </div>
+    </main>
+    <script src="javascript/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+/*Imagem de fundo do site*/
+body {
+    background-color: #0091ad;
+}
+  
+/*Corpo do site*/
+main {
+    position: relative;
+    height: 35vw;
+    width: 50vw;
+    border: 1px solid black;
+    border-radius: 7vw;
+    margin: auto;
+    margin-top: 5vw;
+    background-color: white;
+}
+  
+/*Borda que vai conter todas as informações do cadastro*/
+#informacoes {
+    position: absolute;
+    display: inline-block;
+    left: 7vw;
+}
+
+.direita { 
+    display: inline-block;
+    margin-left: 20vw;
+    padding-bottom: 2vw;
+}
+
+.esquerda {
+    position: absolute;
+}
+
+#divID_motorista {
+    margin-left: 10vw;
+}
+
+/*Título "Cadastre-se" dentro do site*/
+h1 {
+    margin-left: 5vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw; 
+}
+
+#informacoes .input {
+    width: 15vw;
+    height: 2vw;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding-left: 1vw;
+}
+
+/*Botão finalizar*/
+#finalizar {
+    height: 3vw;
+    width: 7vw;
+    border: 1px solid black;
+    border-radius: 10vw;
+    margin-top: 8vw;
+    margin-left: 14vw;
+    cursor: pointer;
+}
+  
+main #finalizar:hover {
+    background-color: #80b1c7;
+}
+    
+    
