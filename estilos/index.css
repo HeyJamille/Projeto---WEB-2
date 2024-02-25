@@ -4,256 +4,257 @@
   box-sizing: border-box;
 }
 
-#section1 {
-  background-color: #0091ad;
-  padding-bottom: 16vw;
+:root {
+  font-size: 62,5%;;
+
+  /* Cores */
+  --font-family: "Fredoka", sans-serif;
+  --background-main-primary: #0091ad;
+  --background-main-secundary: #07396b;
+
+  --font-color-h1: white;
+  --font-size-h1-mobile: 1.5rem;
+  --font-size-h1-desktop: 2rem;
+
+  --font-color-p: rgb(173, 173, 173);
+  --font-size-p-mobile: 1rem;
+  --font-size-p-desktop: 1.5rem;
+
+  --font-size-a-mobile: 1.3rem;
+  --font-size-a-desktop:  1.7rem;
+
+  --font-color-a: black;
+  --font-size-button-mobile: 1rem;
 }
 
-#section1 p {
-  font-size: 2vw;
-  margin-top: 15vw;
-  margin-left: 6vw;
-  text-align: justify;
-  color: white;
+/* FONTES */
+a {
+  font-size: var(--font-size-a-mobile);
+  color: var(--font-color-a);
 }
 
-#section1 #imgCaminhoes {
-  position: absolute;
-  left: 55vw;
-  bottom: 5vw;
-  width: 38vw;
-  height: 30vw;
+p {
+  font-size: var(--font-size-p-mobile);
+  color: var(--font-color-p);
 }
 
-#section1 #imgLogin {
-  position: absolute;
-  left: 90vw;
-  top: 2vw;
-  width: 3vw;
-  height: 3vw;
+h1, h2 {
+  color: var(--font-color-h1);
+  font-size: var(--font-size-h1-mobile);
 }
 
+/* MENU */
+.menu {
+  background-color: var(--background-main-primary);
 
-#section1 button {
-  width: 7vw;
-  height: 4vw;
+  height: 5rem;
+}
+
+.menu ul:first-child {
+  display: none;
+}
+
+.menu ul:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  padding: 10%;
+}
+
+.menu ul:last-child div {
+  height: 0.3rem;
+  width: 2.4rem;
+
+  margin-top: 0.1rem;
+  background-color: white;
+}
+
+/* MAIN PAGE */
+.main-page {
+  background-color: var(--background-main-primary);
+
+  padding: 10%;
+}
+
+.main-page article:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+  margin: 8rem 0 8rem 0;
+}
+
+.main-page button {
+  width: 100%;
+  height: 2.5rem;
+  font-size: var(--font-size-button-mobile);
+
+  border-radius: 1rem;
   border: none;
-  border-radius: 20vw;
-  margin-left: 24vw;
-  margin-top: 2vw;
-  cursor: pointer;
 }
 
-#section1 button:hover {
-  background-color: #80b1c7;
-}
-  
-#negrito {
-  margin-left: 10vw;
+.main-page img {
+  display: none;
 }
 
-#menu {
-  padding-left: 4vw;
-  background-color: #ffffff;
-}
+.info {
+  display: flex;
+  flex-direction: column;
 
-#menu ul li {
-  display: inline;
-}
-
-#menu ul li a {
-  text-decoration: none;
-  color: black;
-  font-size: 2vw;
-  padding: 2vw;
-  display: inline-block;
-  transition: background .4s;
-}
+  background-color: var(--background-main-secundary);
  
-/* Ao passar o mouse em cima de cada item da lista muda a cor */
-#menu ul li a:hover {
-  background-color: #80b1c7;
+  padding: 10%;
+  height: 100%;
 }
 
-/*Segunda parte da página*/
-#section2 {
-  position: relative;
-  background-color: #07396b;
-  padding-top: 2vw;
-  padding-bottom: 7vw;
-}
-
-#section2 header {
-  color: white;
-  font-size: 3vw;
+.info h2 {
   text-align: center;
+  margin-bottom: 5rem;
 }
 
-#section2 main aside img {
-  height: 30vw;
-  width: 38vw;
-  margin-left: 5vw;
-  margin-top: 5vw;
-}
+.info main {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 4rem;
 
-#section2 main div p {
-  position: absolute;
-  display: inline;
-  left: 50vw;
-  top: 20vw;
-  margin-right: 5vw;
-  font-size: 2vw;
   text-align: justify;
-  color: #000000;
 }
 
-#section2 main div h4 {
-  position: absolute;
-  display: inline;
-  left: 62vw;
-  top: 15vw;
-  color: white;
-}
-
-/*Segunda imagem da parte de conferir as páginas do site*/
-#section3 {
-  position: relative;
-  background-color: #0091ad;
-  padding-top: 2vw;
-  padding-bottom: 10vw;
-}
-
-#section3 header {
-  color: white;
-  font-size: 3vw;
+.info main h1 {
   text-align: center;
+
+  margin-bottom: 1rem;
 }
 
-#section3 main aside img {
-  height: 35vw;
-  width: 45vw;
-  margin-left: 52vw;
-  margin-top: 5vw;
+.info img {
+  height: 20rem;
+  width: 100%;
 }
 
-#section3 main div p {
-  position: absolute;
-  display: inline;
-  margin-right: 50vw;
-  left: 5vw;
-  top: 21vw;
-  font-size: 2vw;
-  text-align: justify;
-  color: #000000;
-}
+/* > 500px */
+@media (min-width: 500px) {
+  .menu ul:last-child {
+    display: none;
+  }
+  .menu ul:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 
-#section3 main div h4 {
-  position: absolute;
-  display: inline;
-  right: 57vw;
-  top: 16vw;
-  color: white;
-}
-
-/*Terceira imagem da parte de conferir as páginas do site*/
-#section4 {
-  position: relative;
-  background-color: #07396b;
-  padding-top: 2vw;
-  padding-bottom: 10vw;
-}
-
-#section4 header {
-  color: white;
-  font-size: 3vw;
-  text-align: center;
-}
-
-#section4 main aside img {
-  height: 30vw;
-  width: 38vw;
-  margin-left: 5vw;
-  margin-top: 5vw;
-}
-
-#section4 main div p {
-  position: absolute;
-  display: inline;
-  left: 50vw;
-  top: 18vw;
-  margin-right: 5vw;
-  font-size: 2vw;
-  text-align: justify;
-  color: #000000;
-}
-
-#section4 main div h4 {
-  position: absolute;
-  display: inline;
-  left: 57vw;
-  top: 13vw;
-  color: white;
-}
-
-/*Quarta imagem da parte de conferir as páginas do site*/
-#section5 {
-  position: relative;
-  background-color: #0091ad;
-  padding-top: 2vw;
-  padding-bottom: 10vw;
-}
-
-#section5 header {
-  color: white;
-  font-size: 3vw;
-  text-align: center;
-}
-
-#section5 main aside img {
-  height: 35vw;
-  width: 45vw;
-  margin-left: 50vw;
-  margin-top: 5vw;
-}
-
-#section5 main div p {
-  position: absolute;
-  display: inline;
-  margin-right: 50vw;
-  left: 5vw;
-  top: 15vw;
-  font-size: 2vw;
-  text-align: justify;
-  color: #000000;
-}
-
-#section5 main div h4 {
-  position: absolute;
-  display: inline;
-  right: 60vw;
-  top: 10vw;
-  color: white;
-}
-
-/* Deixa responsivo */
-@media screen and (min-width: 25em){
-  html{ 
-    font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) );
+    background-color: var(--font-color-h1);
+    height: 5rem;
+  }
+  .menu ul:first-child div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .menu ul:first-child li, 
+  a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--font-color-h2);
+  }
+  .menu #imgLogin {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  .main-page h1 {
+    text-align: center;
+  }
+  .main-page a {
+    margin: 0 10% 0 10%;
   }
 }
 
-/* Safari <8 and IE <11 */
-@media screen and (min-width: 25em){
-  html{ 
-    font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) );
+/* > 750px */
+@media (min-width: 750px) {
+  .menu ul:first-child a {
+    font-size: var(--font-size-a-desktop);
   }
 }
 
-@media screen and (min-width: 50em){
-  html{
-    font-size: calc( 16px + (24 - 16) * (100vw - 400px) / (800 - 400) );
+@media (min-width: 800px) {
+  h2 {
+    font-size: var(--font-size-h1-desktop);
+  }
+  .main-page img {
+    display: block;
+  }
+  .main-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5rem
+  }
+  .main-page article {
+    width: 50%;
+    gap: 2rem;
+  }
+  .main-page article:first-child {
+    gap: 2rem;
+  }
+  .main-page article a {
+    margin: 0;
+  }
+  .main-page article img {
+    height: 20rem;
+    width: 100%;
   }
 }
 
-
+@media (min-width: 1000px) {
+  .menu ul:first-child {
+    justify-content: space-between;
+  }
+  .menu ul:first-child > div {
+    margin-left: 5rem;
+  }
+  .menu ul:first-child > li {
+    margin-right: 5rem;
+  }
+  p {
+    font-size: var(--font-size-p-desktop);
+  }
+  h1 {
+    font-size: var(--font-size-h1-desktop);
+  }
+  .main-page article img {
+    height: 25rem;
+  }
+  .main-page button {
+    width: 50%;
+    margin: 0 25% 0 25%;
+  }
+  .main-page article:first-child { 
+    margin: 0;
+  }
+  .info main {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .info main article {
+    width: 100%;
+  }
+  .info main img {
+    height: 25rem;
+  }
+  #dark-blue main {
+    flex-direction: row-reverse;
+    background-color: var(--background-main-secundary);
+  }
+  #light-blue {
+    background-color: var(--background-main-primary);
+  }
+  #light-blue p {
+    color: black;
+  }
+}
 

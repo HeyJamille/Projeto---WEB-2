@@ -5,58 +5,72 @@
   <meta charset="UTF-8">
   <title>Frota de Caminhões</title>
   <link href="./estilos/index.css" type="text/css" rel="stylesheet"/>
+  
+  <!-- Fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
 </head>
   
 <body>
-  <section id="section1"> 
-    <nav id="menu">
-      <ul>
-		    <li>
+  <header class="menu">
+    <ul>
+      <div>
+        <li>
           <a href="cadastro.html">Cadastre-se</a> 
         </li>
           
-	  	  <li>
+        <li>
           <a href="cadastro.html">Consultas</a>
         </li>
           
-		    <li>
+        <li>
           <a href="contatos.html">Contatos</a>
         </li>
           
-		    <li>
+        <li>
           <a href="sobre.html">Sobre</a>
         </li>
-      </ul>
-    </nav>
+      </div>
 
-    <main>
-      <p>
-        <strong>Planeje e acompanhe</strong>as manutenções de sua frota<br>
-        <strong id="negrito">com mais facilidade</strong> conosco!
-      </p>
+      <li>
+        <a href="login.html"></a>
+        <img id="imgLogin" src="images/login_icone.png">
+      </li>
+    </ul>
+
+    <ul>
+      <div></div>
+      <div></div>
+      <div></div>
+    </ul>
+  </header>
+
+  <section class="main-page"> 
+    <article> 
+      <h1>
+        Planeje e acompanhe as manutenções de sua frota com mais facilidade conosco!
+      </h1>
 
       <a href="saiba_mais.html">
         <button id="button" type="button">Saiba mais</button>
       </a>
+    </article>
 
+    <article>
       <img id="imgCaminhoes" src="images/caminhoes4.jpg">
-        
-      <a href="login.html">
-        <img id="imgLogin" src="images/login_icone.png">
-      </a>
-    </main>
-
+    </article>
   </section>
 
-  <section id="section2">
-    <header>Dê uma conferida no layout de nossa página</header>
+  <section class="info" id="dark-blue">
+    <h2>Dê uma conferida no layout de nossa página</h2>
       
     <main>
       <aside>
         <img src="./images/Tela Consultas.png" alt="foto">
       </aside>
-      <div>
-        <h4>Área de Consultas</h4>
+      <article>
+        <h1>Área de Consultas</h1>
         <p>
           Será nessa página onde você poderá consultar as 
           suas frotas, os motoristas, suas viagens e a 
@@ -64,17 +78,17 @@
           simples e direto, para assim, nossos usuários 
           terem uma maior facilidade no manuseio do sistema.
         </p>
-      </div>
+      </article>
     </main>
   </section>
 
-  <section id="section3">
+  <section class="info" id="light-blue">
     <main>
       <aside>
-        <img src="./images/Tela Login e Cadastro.png">
+        <img src="./images/Tela Consultas.png">
       </aside>
-      <div>
-        <h4>Área de Cadastro e Login</h4>
+      <article>
+        <h1>Área de Cadastro e Login</h1>
         <p>
           Será nessas duas páginas onde você poderá se logar 
           ou realizar um cadastro conosco!
@@ -82,17 +96,17 @@
           intuitivo. Então, o que está esperando para fazer 
           parte de nosso time de frotas? Cadastre-se agora.
         </p>
-      </div>
+      </article>
     </main>
   </section>
 
-  <section id="section4">
+  <section class="info" id="dark-blue">
     <main>
       <aside>
-        <img src="./images/Tela de Saiba Mais.png" alt="foto">
+        <img src="./images/Tela Consultas.png" alt="foto">
       </aside>
-      <div>
-        <h4>Área de Saiba Mais e Sobre</h4>
+      <article>
+        <h1>Área de Saiba Mais e Sobre</h1>
         <p>
           Será nessas duas páginas onde você encontrará 
           mais informações sobre o nosso site. Lá você 
@@ -100,17 +114,17 @@
           valores, além de conhecer um pouco mais sobre o 
           que poderá realizar em cada opção de consultas.
         </p>
-      </div>
+      </article>
     </main>
   </section>
 
-  <section id="section5">
+  <section class="info" id="light-blue">
     <main>
       <aside>
-        <img src="./images/Fale Conosco.png" alt="foto">
+        <img src="./images/Tela Consultas.png" alt="foto">
       </aside>
-      <div>
-        <h4>Área de Fale Conosco</h4>
+      <article>
+        <h1>Área de Fale Conosco</h1>
         <p>
           Será nessa página onde você poderá enviar uma   
           mensagem para nós, lá você conseguirá tirar as mais 
@@ -121,9 +135,9 @@
           deixando seu feedback para melhorarmos cada vez 
           mais nosso sistema!
         </p>
-      </div>
+      </article>
     </main>
   </section>
-    
+     
 </body>
 </html>
