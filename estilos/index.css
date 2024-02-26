@@ -5,21 +5,24 @@
 }
 
 :root {
-  font-size: 62,5%;;
+  font-size: 62,5%;
 
-  /* Cores */
+  /* ---------------------------------- CORES ---------------------------------- */
   --font-family: "Fredoka", sans-serif;
-  --background-main-primary: #0091ad;
-  --background-main-secundary: #07396b;
+  
+  --color-dark-blue: #0091ad;
+  --background-main-secundary: white;
 
+  /* h1 */
   --font-color-h1: white;
   --font-size-h1-mobile: 1.5rem;
   --font-size-h1-desktop: 2rem;
 
-  --font-color-p: rgb(173, 173, 173);
+  /* p */
   --font-size-p-mobile: 1rem;
   --font-size-p-desktop: 1.5rem;
 
+  /* a */
   --font-size-a-mobile: 1.3rem;
   --font-size-a-desktop:  1.7rem;
 
@@ -27,27 +30,45 @@
   --font-size-button-mobile: 1rem;
 }
 
-/* FONTES */
+/* ---------------------------------- CONFIGURATIONS ---------------------------------- */
 a {
   font-size: var(--font-size-a-mobile);
   color: var(--font-color-a);
 }
 
-p {
-  font-size: var(--font-size-p-mobile);
-  color: var(--font-color-p);
-}
-
-h1, h2 {
+h1 {
   color: var(--font-color-h1);
   font-size: var(--font-size-h1-mobile);
 }
 
-/* MENU */
-.menu {
-  background-color: var(--background-main-primary);
+h2, h3 {
+  color: var(--font-color-h3);
+  font-size: var(--font-size-h1-mobile);
+}
 
-  height: 5rem;
+#dark-blue {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(1,157,196,1) 64%, rgba(0,212,255,1) 87%, rgba(0,212,255,1) 95%, rgba(0,214,255,1) 100%);
+}
+
+#dark-blue h3,
+#dark-blue p {
+  color: var(--font-color-h1);
+}
+
+#light-blue {
+  background-color: var(--background-main-secundary);
+  color: black;
+}
+
+#light-blue h2,
+#light-blue h3 {
+  color: var(--color-dark-blue);
+}
+
+/* ---------------------------------- MENU ---------------------------------- */
+.menu {
+  height: 100%;
 }
 
 .menu ul:first-child {
@@ -67,13 +88,11 @@ h1, h2 {
   width: 2.4rem;
 
   margin-top: 0.1rem;
-  background-color: white;
+  background-color: var(--font-color-h1);
 }
 
-/* MAIN PAGE */
+/* ---------------------------------- MAIN PAGE ---------------------------------- */
 .main-page {
-  background-color: var(--background-main-primary);
-
   padding: 10%;
 }
 
@@ -89,6 +108,7 @@ h1, h2 {
   width: 100%;
   height: 2.5rem;
   font-size: var(--font-size-button-mobile);
+  color: var(--font-color-a);
 
   border-radius: 1rem;
   border: none;
@@ -98,11 +118,10 @@ h1, h2 {
   display: none;
 }
 
+/* ---------------------------------- INFO ---------------------------------- */
 .info {
   display: flex;
   flex-direction: column;
-
-  background-color: var(--background-main-secundary);
  
   padding: 10%;
   height: 100%;
@@ -121,9 +140,8 @@ h1, h2 {
   text-align: justify;
 }
 
-.info main h1 {
+.info main h3 {
   text-align: center;
-
   margin-bottom: 1rem;
 }
 
@@ -131,6 +149,8 @@ h1, h2 {
   height: 20rem;
   width: 100%;
 }
+
+/* ---------------------------------- MEDIA QUERIES ---------------------------------- */
 
 /* > 500px */
 @media (min-width: 500px) {
@@ -157,7 +177,7 @@ h1, h2 {
   a {
     list-style: none;
     text-decoration: none;
-    color: var(--font-color-h2);
+    color: var(--font-color-a);
   }
   .menu #imgLogin {
     height: 2.5rem;
@@ -178,6 +198,7 @@ h1, h2 {
   }
 }
 
+/* > 800px */
 @media (min-width: 800px) {
   h2 {
     font-size: var(--font-size-h1-desktop);
@@ -209,6 +230,7 @@ h1, h2 {
   }
 }
 
+/* > 1000px */
 @media (min-width: 1000px) {
   .menu ul:first-child {
     justify-content: space-between;
@@ -248,13 +270,6 @@ h1, h2 {
   }
   #dark-blue main {
     flex-direction: row-reverse;
-    background-color: var(--background-main-secundary);
-  }
-  #light-blue {
-    background-color: var(--background-main-primary);
-  }
-  #light-blue p {
-    color: black;
   }
 }
 

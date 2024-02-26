@@ -1,54 +1,119 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
   
-/*Imagem de fundo do site*/
-body{
-  background-color: #0091ad;
+html {
+  font: 62,5%;
 }
+
+/* ---------------------------------- CONFIGURATIONS ---------------------------------- */
+h1 {
+  font-size: 2rem;
+  color: white;
+}
+
+h2,
+a {
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+/* ---------------------------------- BACKGROUND ---------------------------------- */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgb(2,0,36);
+  background: linear-gradient(235deg, rgba(2,0,36,1) 0%, rgba(1,157,196,1) 51%, rgba(0,212,255,1) 100%);
+}
+
+/* ---------------------------------- BODY OF SITE ---------------------------------- */
+.informations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  height: 100vh;
   
-/*Corpo do site*/
-main{
-  position: relative;
-  height: 25vw;
-  width: 30vw;
-  border: 1px solid black;
-  border-radius: 7vw;
-  margin-top: 10vw;
-  margin-left: 35vw;
-  background-color: white;
+  padding: 0 10%;
 }
-  
-/*Borda que vai conter todas as informações do cadastro*/
-#informacoes{
-  padding-top: 5vw;
-  padding-left: 7vw;
+
+.informations > article h1 {
+  display: inline;
+  margin: 0 0.5rem;
 }
-  
-/*Layout das caixas de textos*/
-#informacoes .input{
-  width: 15vw;
-  height: 2vw;
-  border: 1px solid black;
-  border-radius: 15px;
-  padding-left: 1vw;
+
+.informations article h1:last-child {
+  color: black;
+  background-color: #70c0d4;
+
+  border: none;
+  border-bottom-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+
+  padding: 0.3rem;
 }
-  
-/*Botão de entrar*/ 
-#entrar{
-  height: 3vw;
-  width: 7vw;
-  border: 1px solid black;
-  border-radius: 10vw;
-  margin-top: 2vw;
-  margin-left: 5vw;
-  text-align: center;
-  cursor: pointer;
+
+/* ---------------------------------- FORM ---------------------------------- */
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
-  
-main #entrar:hover{
-  background-color: #80b1c7;
+
+form section:first-child input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 2rem;
+  width: 16rem;
+  margin-bottom: 1rem;
+  outline: 0;  
+
+  border: none;
+  border-bottom: 2px solid black;
+
+  padding-left: 0.5rem;
 }
+
+form section:nth-child(2) input  {
+  height: 2rem;
+  width: 16rem;
+}
+
+/* ---------------------------------- MEDIA QUERIES ---------------------------------- */
+/* > 600px */
+@media (min-width: 600px) {
+  main {
+    background-color: rgb(2,0,36);
+    background-color: linear-gradient(235deg, rgba(2,0,36,1) 0%, rgba(1,157,196,1) 51%, rgba(0,212,255,1) 100%);
     
+    height: 100vh;
+  }
+  .informations article h1:last-child {
+    padding: 0.5rem;
+  }
+  .informations {
+    border: 1px solid none;
+    background-color: white;
     
+    height: 30rem;
+    padding: 0 5%;
+
+    border-top-right-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+  }
+  h1 {
+    color: black;
+  }
+}
+  

@@ -8,30 +8,29 @@
 </head>
   
 <body>
-    <main>
-        <div id="informacoes">
-            <h1 id="infTitle">Seja Bem Vindo!</h1>
-            <br><br>
+  <main>
+    <section class="informations">
+      <article>
+        <h1>Cadastro</h1>
+        <h1>Login</h1> 
+      </article>
+      
+      <!-- Informações do Formulário -->
+      <form class="form" action="PHP/login.php" method="post">
+        <section> 
+          <input type="email" class="input" id="email" name="email" placeholder="E-mail"> 
+          <input type="password" class="input" id="password" name="senha" placeholder="Senha">
 
-            <!-- Informações do Formulário -->
-            <form id="form" action="PHP/login.php" method="POST">
-              <label for="email">E-mail</label><br>
-              <input type="email" class="input" id="email" name="email" placeholder="Digite seu e-mail" request>
-            
-              <br><br>
-        
-              <label for="senha">Senha</label><br>
-              <input type="password" class="input" id="senha" name="senha" placeholder="Digite sua senha" request>
+          <h2>Esqueceu a senha?</h2>
+        </section>
+    
+        <section> 
+          <input type="submit" class="end" value="Entrar" onclick="cadastro()">
+        </section>
+      </form>
 
-              <br><br><br>
-
-              <input type="submit" id="entrar" value="Entrar" onclick="login();">
-        
-              <br><br>
-            </form>
-       
-        </div>
-    </main>
-<script src="javascript/script.js"></script>
-</body>
+    </section>
+  </main>
+    <script src="javascript/script.js"></script>
+  </body>
 </html>

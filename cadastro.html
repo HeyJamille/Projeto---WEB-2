@@ -8,41 +8,27 @@
 </head>
   
 <body>
-    <main>
-        <div id="informacoes">
-        <h1 id="infTitle">Cadastre-se</h1>
-        <br><br>
-
-        <!-- Informações do Formulário -->
-        <form id="form" action="PHP/cadastro.php" method="post">
-            <label for="nome">Nome</label><br>
-            <input type="text" class="input" id="nome" name="nome" placeholder="Digite seu nome">
-            
-            <br><br>
-        
-            <label for="email">E-mail</label><br>
-            <input type="email" class="input" id="email" name="email" placeholder="Digite seu e-mail">
-            
-            <br><br>
-        
-            <label for="senha">Senha</label><br>
-            <input type="password" class="input" id="senha" name="senha" placeholder="Digite uma senha">
-
-            <br><br><br>
-
-            <div id="paragrafo"> 
-                <span id="inf_parag">Já possui cadastro?</span>
-                <br>
-                <a href="login.html">Clique aqui</a> para fazer login.
-            </div>
-
-            <input type="submit" id="finalizar" onclick="cadastro()">
-          
-          <br><br>
-        </form>
+  <main>
+    <section class="informations">
+      <article>
+        <h1>Cadastro</h1>
+        <h1>Login</h1> 
+      </article>
       
-      </div>
-    </main>
+      <!-- FORM INFORMATIONS -->
+      <form class="form" action="PHP/cadastro.php" method="post">
+        <section> 
+          <input type="text" class="input" id="name" name="nome" placeholder="Nome">
+          <input type="email" class="input" id="email" name="email" placeholder="E-mail"> 
+          <input type="password" class="input" id="password" name="senha" placeholder="Senha">
+        </section>
+    
+        <section> 
+          <input type="submit" value="Cadastrar" class="end" onclick="cadastro()">
+        </section>
+      </form>
+    </section>
+  </main>
     <script src="javascript/script.js"></script>
   </body>
 </html>
