@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Garagem</title>
+    <link href="./estilos/cad_garagem.css" type="text/css" rel="stylesheet"/>
+</head>
+  
+<body>
+    <main>
+        <div id="informacoes">
+            <h1 id="infTitle">Cadastro de uma
+                <span1>Garagem</span1>
+            </h1>
+            <br><br>
+
+            <!-- Informações do Formulário -->
+            <form id="form" action="PHP/cad_garagem.php" method="POST">
+                <label for="ID">ID</label><br>
+                <input type="text" class="input" id="ID" name="ID" placeholder="Digite o ID">
+            
+                <br><br> 
+        
+                <label for="descricao">Descrição</label><br>
+                <input type="text" class="input" id="descricao" name="descricao" placeholder="Digite uma descricao">
+
+                <br><br><br>
+
+                <input type="submit" id="finalizar" onclick="cad_garagem()">
+          
+                <br><br>
+            </form>
+        
+        </div>
+    </main>
+    <script src="javascript/script.js"></script>
+</body>
+</html>

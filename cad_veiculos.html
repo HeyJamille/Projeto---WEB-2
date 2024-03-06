@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Cadastro</title>
+  <link href="./estilos/cad_veiculo.css" type="text/css" rel="stylesheet"/>
+</head>
+  
+<body>
+  <main>
+    <div id="informacoes">
+      <h1 id="infTitle">Cadastro de um Veículo</h1>
+      <br><br>
+
+      <!-- Informações do Formulário -->
+      <form id="form" action="PHP/cad_veiculos.php" method="POST"> 
+        <div id="divID">
+          <label for="ID">ID</label><br>
+          <input type="text" class="input" id="ID" name="ID" placeholder="Digite o ID">
+        </div>
+
+        <div id="divModelo">
+          <label for="modelo">Modelo</label><br>
+          <input type="text" class="input" id="modelo" name="modelo" placeholder="Digite o Modelo">
+        </div>
+
+        <br><br>
+
+        <div id="divAno">
+          <label for="ano">Ano</label><br>
+          <input type="text" class="input" id="ano" name="ano" placeholder="Digite o Ano">
+        </div>
+          
+        <br><br>
+
+        <div id="divPlaca">
+          <label for="placa">Placa</label><br>
+          <input type="text" class="input" id="placa" name="placa" placeholder="Digite a Placa">
+        </div>
+
+        <br><br>
+
+        <div id="divGaragem">
+          <label for="ID_garagem">ID da Garagem</label><br>
+          <input type="text" class="input" id="ID_garagem" name="ID_garagem" placeholder="Digite o ID da Garagem">
+        </div>
+          
+        <br><br><br>
+      
+        <input type="submit" value="Finalizar" id="finalizar" onclick="cad_veiculos();"> 
+          
+        <br><br>
+      </form>
+       
+    </div>
+  </main>
+  <script type="text/javascript" src="javascript/script.js"></script>
+</body>
+</html>

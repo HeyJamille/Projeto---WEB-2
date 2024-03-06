@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Veículos</title>
+  <link href="./estilos/veiculos.css" type="text/css" rel="stylesheet"/>
+</head>
+  
+<body>
+  <main>
+    <div id="informacoes">
+      <h1 id="infTitle">
+        Consulte um <span1>Veículo</span1>
+      </h1>
+      
+      <br><br>
+
+      <!-- Informações do Formulário -->
+      <form id="form" action="PHP/veiculos.php" method="POST">
+        <label for="ID">ID</label><br>
+        <input type="text" id="ID" name="ID" class="input" placeholder="Digite o ID do Veículo">
+          
+        <br><br><br><br><br>
+
+        <div id="paragrafo"> 
+          <span1>Não está encontrando-o?</span1>
+          <br>
+          <a href="cad_veiculos.html">Clique aqui</a> para cadastrar um novo 
+          <span2>veículo.</span2>
+        </div>
+
+        <a href="consultas.html">
+          <input type="submit" id="finalizar" onclick="veiculos();">
+        </a>  
+          
+        <br><br>
+      </form>
+    </div>
+  </main>
+  <script type="text/javascript" src="javascript/script.js"></script>
+</body>
+</html>

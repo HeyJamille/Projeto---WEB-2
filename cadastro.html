@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <link href="./estilos/cadastro.css" type="text/css" rel="stylesheet"/>
+</head>
+  
+<body>
+  <main>
+    <section class="informations">
+      <article>
+        <a href="./cadastro.html">
+          <h1>Cadastro</h1>
+        </a>
+
+        <a href="./login.html">
+          <h1>Login</h1> 
+        </a>
+      </article>
+      
+      <!-- FORM INFORMATIONS -->
+      <form class="form" action="PHP/cadastro.php" method="post">
+        <section> 
+          <input type="text" class="input" id="name" name="nome" placeholder="Nome">
+          <input type="email" class="input" id="email" name="email" placeholder="E-mail"> 
+          <input type="password" class="input" id="password" name="senha" placeholder="Senha">
+        </section>
+    
+        <section> 
+          <input type="submit" value="Cadastrar" class="end" onclick="cadastro()">
+        </section>
+      </form>
+    </section>
+  </main>
+    <script src="javascript/script.js"></script>
+  </body>
+</html>

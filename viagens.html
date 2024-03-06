@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Viagem</title>
+  <link href="./estilos/viagens.css" type="text/css" rel="stylesheet"/>
+</head>
+  
+<body>
+  <main>
+    <div id="informacoes">
+      <h1 id="infTitle">Consulte uma 
+        <span1>Viagem</span1>
+      </h1>
+      <br><br>
+
+      <!-- Informações do Formulário -->
+      <form id="form" action="PHP/viagens.php" method="POST">
+        <label for="ID">ID</label><br>
+        <input type="text" class="input" id="ID" name="ID" placeholder="Digite o ID da Viagem">
+          
+        <br><br><br><br><br>
+
+        <div id="paragrafo"> 
+          <span id="inf_parag">Não está encontrando sua viagem?</span>
+          <br>
+          <a href="cad_viagens.html">Clique aqui</a> para cadastrar uma 
+          <span2>nova viagem</span2>
+        </div>
+
+        <input type="submit" id="finalizar" value="Finalizar" onclick="viagens();">
+          
+        <br><br>
+      </form>
+      
+    </div>
+  </main>
+  <script type="text/javascript" src="javascript/script.js"></script>
+</body>
+</html>

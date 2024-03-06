@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="./estilos/login.css" type="text/css" rel="stylesheet"/>
+</head>
+  
+<body>
+  <main>
+    <section class="informations">
+      <article>
+        <a href="./cadastro.html">
+          <h1>Cadastro</h1>
+        </a>
+
+        <a href="./login.html">
+          <h1>Login</h1> 
+        </a>
+      </article>
+      
+      <!-- Informações do Formulário -->
+      <form class="form" action="PHP/login.php" method="post">
+        <section> 
+          <input type="email" class="input" id="email" name="email" placeholder="E-mail"> 
+          <input type="password" class="input" id="password" name="senha" placeholder="Senha">
+
+          <h2>Esqueceu a senha?</h2>
+        </section>
+    
+        <section> 
+          <input type="submit" class="end" value="Entrar" onclick="cadastro()">
+        </section>
+      </form>
+
+    </section>
+  </main>
+    <script src="javascript/script.js"></script>
+  </body>
+</html>

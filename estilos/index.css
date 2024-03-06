@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62,5%;
+
+  /* ---------------------------------- CORES ---------------------------------- */
+  --font-family: "Fredoka", sans-serif;
+  
+  --color-dark-blue: #0091ad;
+  --background-main-secundary: white;
+
+  /* h1 */
+  --font-color-h1: white;
+  --font-size-h1-mobile: 1.5rem;
+  --font-size-h1-desktop: 1.7rem;
+
+  /* p */
+  --font-size-p-mobile: 1rem;
+  --font-size-p-desktop: 1.5rem;
+
+  /* a */
+  --font-size-a-mobile: 1.3rem;
+  --font-size-a-desktop:  1.7rem;
+
+  --font-color-a: black;
+  --font-size-button-mobile: 1rem;
+}
+
+/* ---------------------------------- CONFIGURATIONS ---------------------------------- */
+a {
+  font-size: var(--font-size-a-mobile);
+  color: var(--font-color-a);
+}
+
+h1 {
+  color: var(--font-color-h1);
+  font-size: var(--font-size-h1-mobile);
+}
+
+h2, h3 {
+  color: var(--font-color-h3);
+  font-size: var(--font-size-h1-mobile);
+}
+
+#dark-blue {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(1,157,196,1) 64%, rgba(0,212,255,1) 87%, rgba(0,212,255,1) 95%, rgba(0,214,255,1) 100%);
+}
+
+#dark-blue h3,
+#dark-blue p {
+  color: var(--font-color-h1);
+}
+
+#light-blue {
+  background-color: var(--background-main-secundary);
+  color: black;
+}
+
+#light-blue h2,
+#light-blue h3 {
+  color: var(--color-dark-blue);
+}
+
+/* ---------------------------------- MENU ---------------------------------- */
+.menu {
+  height: 100%;
+}
+
+.menu ul:first-child {
+  display: none;
+}
+
+.menu ul:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  padding: 5%;
+}
+
+.menu ul:last-child div {
+  height: 0.3rem;
+  width: 2.4rem;
+
+  margin-top: 0.1rem;
+  background-color: var(--font-color-h1);
+}
+
+/* ---------------------------------- MAIN PAGE ---------------------------------- */
+.main-page {
+  padding: 5%;
+}
+
+.main-page article:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+  margin: 11rem 0 11rem 0;
+}
+
+.main-page button {
+  width: 100%;
+  height: 2.5rem;
+  font-size: var(--font-size-button-mobile);
+  color: var(--font-color-a);
+
+  border-radius: 1rem;
+  border: none;
+}
+
+.main-page img {
+  display: none;
+}
+
+/* ---------------------------------- INFO ---------------------------------- */
+.info {
+  display: flex;
+  flex-direction: column;
+ 
+  padding: 5%;
+  height: 100%;
+}
+
+.info article:first-child {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.info main {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 4rem;
+
+  text-align: justify;
+}
+
+.info main h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.info img {
+  min-height: 15rem;
+  max-width: 100%;
+}
+
+/* ---------------------------------- FOOTER ---------------------------------- */
+footer section:first-child {
+  text-align: center;
+  padding: 1rem 15% 1rem 15%;
+}
+
+footer section:first-child article:first-child {
+  margin-bottom: 2rem;
+}
+
+footer section:first-child article:last-child {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer h1 {
+  color: var(--font-color-a);
+  margin-bottom: 1rem;
+}
+
+footer p,
+footer section:last-child h2 {
+  font-size: 1rem;
+}
+
+footer section:last-child {
+  display: flex;
+  flex-wrap: row;
+  justify-content: center;
+  align-items: center;
+
+  height: 3rem;
+
+  color: var(--font-color-h1);
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(1,157,196,1) 64%, rgba(0,212,255,1) 87%, rgba(0,212,255,1) 95%, rgba(0,214,255,1) 100%);
+}
+
+footer section:last-child article {
+  display: none;
+}
+
+
+/* ---------------------------------- MEDIA QUERIES ---------------------------------- */
+
+/* > 500px */
+@media (min-width: 500px) {
+  .menu ul:last-child {
+    display: none;
+  }
+  .menu ul:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: var(--font-color-h1);
+    height: 5rem;
+  }
+  .menu ul:first-child div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .menu ul:first-child li, 
+  a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--font-color-a);
+  }
+  .menu #imgLogin {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  .main-page h1 {
+    text-align: center;
+  }
+  .main-page a {
+    margin: 0 10% 0 10%;
+  }
+}
+
+/* > 750px */
+@media (min-width: 750px) {
+  .menu ul:first-child a {
+    font-size: var(--font-size-a-desktop);
+  }
+}
+
+/* > 800px */
+@media (min-width: 800px) {
+  h2 {
+    font-size: var(--font-size-h1-desktop);
+  }
+  .main-page img {
+    display: block;
+  }
+  .main-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5rem
+  }
+  .main-page article {
+    width: 50%;
+    gap: 2rem;
+  }
+  .main-page article:first-child {
+    gap: 2rem;
+  }
+  .main-page article a {
+    margin: 0;
+  }
+  .main-page article img {
+    height: 20rem;
+    max-width: 100%;
+  }
+  footer section:last-child {
+    justify-content: space-between;
+    padding: 0 2rem 0 2rem;
+  }
+  footer section:last-child article {
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+/* > 1000px */
+@media (min-width: 1000px) {
+  .menu ul:first-child {
+    justify-content: space-between;
+  }
+  .menu ul:first-child > div {
+    margin-left: 5rem;
+  }
+  .menu ul:first-child > li {
+    margin-right: 5rem;
+  }
+  p {
+    font-size: var(--font-size-p-desktop);
+  }
+  h1 {
+    font-size: var(--font-size-h1-desktop);
+  }
+  .main-page article img {
+    height: 25rem;
+  }
+  .main-page button {
+    width: 50%;
+    margin: 0 25% 0 25%;
+  }
+  .main-page article:first-child { 
+    margin: 0;
+  }
+  .info main {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .info main article {
+    width: 100%;
+  }
+  .info main img {
+    height: 25rem;
+  }
+  #dark-blue main {
+    flex-direction: row-reverse;
+  }
+}
+
