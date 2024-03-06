@@ -1,6 +1,9 @@
 <?php
+<<<<<<< HEAD
 
     // Conecta ao banco de dados
+=======
+>>>>>>> f5a698eec8ae75756d3fb33b0c775cff7432815c
     $conecta = pg_connect("host=localhost dbname=frota user=postgres password=1212");
 
     $nome = $_POST['nome'];
